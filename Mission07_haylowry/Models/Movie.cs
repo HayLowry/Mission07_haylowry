@@ -11,11 +11,13 @@ namespace Mission07_haylowry.Models
         [Key]
         [Required]
         public int MovieId { get; set; }
+        [Required]
         public string Title { get; set; }
         public int Year { get; set; }
         public string Director { get; set; }
         public string Rating { get; set; }
 
+        // Build foreign key relationship
         public int CategoryID { get; set; }
         public Category Category { get; set; }
 
